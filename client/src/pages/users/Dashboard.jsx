@@ -55,7 +55,7 @@ const Dashboard = () => {
       {loading && (
         <i className="fa-solid fa-spinner animate-spin text-3xl text-center block"></i>
       )}
-
+ admin
       {success && <Success msg={success} />}
       {error && <Alert msg={error} />}
 

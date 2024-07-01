@@ -3,7 +3,7 @@ import Layout from "./pages/Layout";
 import Login from "./pages/users/Login";
 import Register from "./pages/users/Register";
 import Dashboard from "./pages/users/Dashboard";
-import Home from "./pages/events/Home";
+import Admin from "./pages/events/Admin";
 import Create from "./pages/events/Create";
 import Update from "./pages/events/Update";
 import AuthRoutes from "./Routes/AuthRoutes";
@@ -14,7 +14,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<Admin />} />
 
           <Route element={<AuthRoutes />}>
             <Route path="dashboard" element={<Dashboard />} />
@@ -26,7 +26,6 @@ const App = () => {
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
           </Route>
-          
         </Route>
       </Routes>
     </BrowserRouter>

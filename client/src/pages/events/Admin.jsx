@@ -3,7 +3,7 @@ import { getEvents } from "../../controllers/eventsController";
 import { EventContext } from "../../contexts/EventContext";
 import Event from "../../Components/Event";
 
-const Home = () => {
+const Admin = () => {
   // Use event context
   const { events, setEvents } = useContext(EventContext);
 
@@ -40,4 +40,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Admin;

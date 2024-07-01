@@ -18,7 +18,7 @@ const Layout = () => {
       // Remove the items from local storage
       localStorage.removeItem("email");
       localStorage.removeItem("token");
-      // Navigate to Home page
+      // Navigate to Admin page
       navigate("/");
     }
   };
@@ -28,7 +28,7 @@ const Layout = () => {
       <header className="bg-indigo-500 text-white">
         <nav className="flex items-center justify-between p-4 max-w-screen-lg mx-auto">
           <Link
-            title="Home"
+            title="Admin"
             to="/"
             className="fa-solid fa-house-chimney nav-link"
           ></Link>
